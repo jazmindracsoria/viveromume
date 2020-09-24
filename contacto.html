@@ -5,32 +5,65 @@
     <meta charset="utf-8">
     <meta name="description" content="Consulta nuestra amplia gama de productos en nuestra web oficial, y envia tu consulta personalizada por presupuestos y más.">
     <meta name="keywords"  content="vivero, jardinería, contacto">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/estilo_propio.css">
+    <link rel="stylesheet" type="text/css" href="sass/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Signika:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <div class="header">
-            <nav>
-                <img src="img/prelogo.png" alt="logo" class="navlogo"/>
-                <h1><a href="index.html">Mume Vivero</a></h1>
-                <div class="menunav menu">
-                    <ul>
-                        <li><a href="tienda.html">Tienda</a></li> 
-                        <li><a href="promociones.html">Promociones</a></li> 
-                        <li><a href="nosotros.html">Nosotros</a></li> 
-                        <li><a href="consejos.html">Consejos</a></li> 
-                        <li><a href="contacto.html">Contacto</a></li>    
-                 </ul>  
-                </div> 
+        <div class="row">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light index__header">
+                <div class="col-md-4 col-sm-8">
+                    <a class="navbar-brand" href="index.html"><img src="img/logotipo.png" alt="logotipo"/></a>
+                </div>
+                <div class="col-md-8 col-sm-4">
+                    <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>          
+                    <div class="collapse navbar-collapse  float-right" id="navbarNavDropdown">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="tienda.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tienda
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="tienda.html">Flores</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Hortalizas</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Más</a>
+                                </div>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="promociones.html">Promociones<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link none-sm" href="consejos.html">Consejos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
-    </header>
+    </header>   
     <main> 
         <section>
             <h1 class="box aparecer">Contacto</h1>
-            <section>
-                <section>
+            <section class="box centro text-center">
+                <p>Puedes acercarnos tu consulta completando el siguiente formulario, y responderemos tu mensaje tan pronto sea posible.
+                </p>
+            </section>
             <div class="box">
             <a name="form"></a>  
                 <form action="enviado.html" method="post">
