@@ -149,6 +149,9 @@ nav ul li:hover {
     padding: 10px;
 }
 
+.fondo {
+    max-width: 100%;
+}
 
 .centro {
     display: block;

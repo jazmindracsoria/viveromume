@@ -57,42 +57,44 @@
             </nav>
         </div>
     </header>   
-    <main> 
-        <section>
-            <h1 class="box text-center">Contacto</h1>
-            <section class="centro text-center">
-                <p>Puedes acercarnos tu consulta completando el siguiente formulario, y responderemos tu mensaje tan pronto como sea posible.
-                </p>
+    <main>
+        <div style="background: url(img/background-image.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;" class="page-holder bg-cover fondo"> 
+            <section>
+                <h1 class="text-center">Contacto</h1>
+                <section class="centro text-center">
+                    <p>Puedes acercarnos tu consulta completando el siguiente formulario, y responderemos tu mensaje tan pronto como sea posible.
+                    </p>
+                </section>
+                <div class="box">
+                <a name="form"></a>  
+                    <form action="enviado.html" method="post">
+                        <fieldset>
+                            <legend>Dejanos tuconsulta</legend>
+                            <label for="nombre">Nombre</label><br> 
+                            <input type="text" name="nombre"><br>
+                            <label for="apellido">Apellido</label><br> 
+                            <input type="text" name="apellido"><br>
+                            <label for="mail">E-mail</label><br> 
+                            <input type="text" name="mail"><br><br>
+                            <label for="opcion">Sexo</label><br> 
+                            <input type="radio" name="opcion" value="masculino">Hombre
+                            <input type="radio" name="opcion" value="femenino">Mujer<br><br>
+                            <label for="motivos_de_consulta">Motivo</label><br> 
+                            <select name="seleccion_motivo">
+                                <option value="presupuesto">Presupuesto</option>
+                                <option value="producto">Productos</option>
+                                <option value="consulta">Consulta</option>
+                                <option value="varios">Otro</option>    
+                            </select><br><br>
+                            <label for="mensaje">Mensaje</label><br> 
+                            <textarea name="mensaje"></textarea><br>
+                            <input type="reset" name="boton_restablecer" value="BORRAR">
+                            <input type="submit" name="boton_enviar" value="ENVIAR">
+                        </fieldset>
+                    </form>
+                </div>
             </section>
-            <div class="box">
-            <a name="form"></a>  
-                <form action="enviado.html" method="post">
-                    <fieldset>
-                        <legend>Tu consulta</legend>
-                        <label for="nombre">Nombre</label><br> 
-                        <input type="text" name="nombre"><br>
-                        <label for="apellido">Apellido</label><br> 
-                        <input type="text" name="apellido"><br>
-                        <label for="mail">E-mail</label><br> 
-                        <input type="text" name="mail"><br><br>
-                        <label for="opcion">Sexo</label><br> 
-                        <input type="radio" name="opcion" value="masculino">Hombre
-                        <input type="radio" name="opcion" value="femenino">Mujer<br><br>
-                        <label for="motivos_de_consulta">Motivo</label><br> 
-                        <select name="seleccion_motivo">
-                            <option value="presupuesto">Presupuesto</option>
-                            <option value="producto">Productos</option>
-                            <option value="consulta">Consulta</option>
-                            <option value="varios">Otro</option>    
-                        </select><br><br>
-                        <label for="mensaje">Mensaje</label><br> 
-                        <textarea name="mensaje"></textarea><br>
-                        <input type="reset" name="boton_restablecer" value="BORRAR">
-                        <input type="submit" name="boton_enviar" value="ENVIAR">
-                    </fieldset>
-                </form>
-            </div>
-        </section>
+        </div>
     </main> 
     <footer>
         <div class="container">
