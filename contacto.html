@@ -65,11 +65,66 @@
                     <p>Puedes acercarnos tu consulta completando el siguiente formulario, y responderemos tu mensaje tan pronto como sea posible.
                     </p>
                 </section>
+                <section>
+                    <div class="container contact-form">
+                        <a name="form"></a>  
+                        <form action="enviado.html" method="post">
+                            <fieldset>
+                                <legend>Dejanos tu consulta</legend>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="nombre">Nombre</label> 
+                                            <input type="text" name="nombre" class="form-control"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="apellido">Apellido</label> 
+                                            <input type="text" name="apellido" class="form-control"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="mail">E-mail</label> 
+                                            <input type="text" name="mail" class="form-control"/>
+                                        </div>
+                                        <div class="form-check">
+                                            <label for="opcion">Sexo</label><br>  
+                                            <input class="form-check-input" type="radio" name="opcion" value="masculino">Hombre <br>
+                                            <input class="form-check-input" type="radio" name="opcion" value="femenino">Mujer<br><br>
+                                        </div>
+                                        <div class="form-control">
+                                            <label for="motivos_de_consulta">Motivo</label><br> 
+                                            <select name="seleccion_motivo">
+                                            <option value="presupuesto">Presupuesto</option>
+                                            <option value="producto">Productos</option>
+                                            <option value="consulta">Consulta</option>
+                                            <option value="varios">Otro</option>   
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </section>
                 <div class="box">
                 <a name="form"></a>  
                     <form action="enviado.html" method="post">
                         <fieldset>
-                            <legend>Dejanos tuconsulta</legend>
+                            <legend>Dejanos tu consulta</legend>
                             <label for="nombre">Nombre</label><br> 
                             <input type="text" name="nombre"><br>
                             <label for="apellido">Apellido</label><br> 
