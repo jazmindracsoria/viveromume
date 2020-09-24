@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/estilo_propio.css">
+    <link rel="stylesheet" type="text/css" href="css/index_completario_sass.css">
     <link rel="stylesheet" type="text/css" href="sass/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Signika:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -58,93 +58,56 @@
         </div>
     </header>   
     <main>
-        <div style="background: url(img/background-image.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;" class="page-holder bg-cover fondo"> 
+        <div style="background: url(img/fondo.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;" class="page-holder bg-cover fondo"> 
             <section>
-                <h1 class="text-center">Contacto</h1>
-                <section class="centro text-center">
-                    <p>Puedes acercarnos tu consulta completando el siguiente formulario, y responderemos tu mensaje tan pronto como sea posible.
+                <div class="container contact-form contact_padding">
+                    <h1 class="text-center">Contacto</h1>
+                    <p class="centro text-center">Puedes acercarnos tu consulta completando el siguiente formulario, y responderemos tu mensaje tan pronto como sea posible.
                     </p>
-                </section>
-                <section>
-                    <div class="container contact-form">
-                        <a name="form"></a>  
-                        <form action="enviado.html" method="post">
-                            <fieldset>
-                                <legend>Dejanos tu consulta</legend>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="nombre">Nombre</label> 
-                                            <input type="text" name="nombre" class="form-control"/>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="apellido">Apellido</label> 
-                                            <input type="text" name="apellido" class="form-control"/>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="mail">E-mail</label> 
-                                            <input type="text" name="mail" class="form-control"/>
-                                        </div>
-                                        <div class="form-check">
-                                            <label for="opcion">Sexo</label><br>  
-                                            <input class="form-check-input" type="radio" name="opcion" value="masculino">Hombre <br>
-                                            <input class="form-check-input" type="radio" name="opcion" value="femenino">Mujer<br><br>
-                                        </div>
-                                        <div class="form-control">
-                                            <label for="motivos_de_consulta">Motivo</label><br> 
-                                            <select name="seleccion_motivo">
-                                            <option value="presupuesto">Presupuesto</option>
-                                            <option value="producto">Productos</option>
-                                            <option value="consulta">Consulta</option>
-                                            <option value="varios">Otro</option>   
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                </section>
-                <div class="box">
-                <a name="form"></a>  
+                    <a name="form"></a>  
                     <form action="enviado.html" method="post">
                         <fieldset>
                             <legend>Dejanos tu consulta</legend>
-                            <label for="nombre">Nombre</label><br> 
-                            <input type="text" name="nombre"><br>
-                            <label for="apellido">Apellido</label><br> 
-                            <input type="text" name="apellido"><br>
-                            <label for="mail">E-mail</label><br> 
-                            <input type="text" name="mail"><br><br>
-                            <label for="opcion">Sexo</label><br> 
-                            <input type="radio" name="opcion" value="masculino">Hombre
-                            <input type="radio" name="opcion" value="femenino">Mujer<br><br>
-                            <label for="motivos_de_consulta">Motivo</label><br> 
-                            <select name="seleccion_motivo">
-                                <option value="presupuesto">Presupuesto</option>
-                                <option value="producto">Productos</option>
-                                <option value="consulta">Consulta</option>
-                                <option value="varios">Otro</option>    
-                            </select><br><br>
-                            <label for="mensaje">Mensaje</label><br> 
-                            <textarea name="mensaje"></textarea><br>
-                            <input type="reset" name="boton_restablecer" value="BORRAR">
-                            <input type="submit" name="boton_enviar" value="ENVIAR">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="nombre">Nombre</label> 
+                                        <input type="text" name="nombre" class="form-control"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="apellido">Apellido</label> 
+                                        <input type="text" name="apellido" class="form-control"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mail">E-mail</label> 
+                                        <input type="text" name="mail" class="form-control"/>
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="opcion">Sexo</label><br>  
+                                        <input class="form-check-input" type="radio" name="opcion" value="masculino">Hombre <br>
+                                        <input class="form-check-input" type="radio" name="opcion" value="femenino">Mujer<br><br>
+                                    </div>                                   
+                                </div>
+                                <div class="col-md-6">
+                                    <div>
+                                        <label for="motivos_de_consulta">Motivo</label><br> 
+                                        <select class="form-control" name="seleccion_motivo">
+                                        <option value="presupuesto">Presupuesto</option>
+                                        <option value="producto">Productos</option>
+                                        <option value="consulta">Consulta</option>
+                                        <option value="varios">Otro</option>
+                                        </select>   
+                                    </div>   
+                                    <br>
+                                    <div class="form-group">
+                                        <textarea name="mensaje" class="form-control" placeholder="Escribe tu consulta *" style="width: 100%; height: 200px;"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="reset" name="boton_restablecer" class="btn card__btn__blue" value="BORRAR">
+                                        <input type="submit" name="boton_enviar" class="btn card__btn__blue" value="ENVIAR">
+                                    </div>
+                                </div>
+                            </div>
                         </fieldset>
                     </form>
                 </div>
