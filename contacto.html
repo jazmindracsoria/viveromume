@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mume vivero-Contacto</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Consulta nuestra amplia gama de productos en nuestra web oficial, y envia tu consulta personalizada por presupuestos y más.">
+    <meta name="keywords"  content="vivero, jardinería, contacto">
+    <link rel="stylesheet" type="text/css" href="css/estilo_propio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Signika:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <nav>
+                <img src="img/prelogo.png" alt="logo" class="navlogo"/>
+                <h1><a href="index.html">Mume Vivero</a></h1>
+                <div class="menunav menu">
+                    <ul>
+                        <li><a href="tienda.html">Tienda</a></li> 
+                        <li><a href="promociones.html">Promociones</a></li> 
+                        <li><a href="nosotros.html">Nosotros</a></li> 
+                        <li><a href="consejos.html">Consejos</a></li> 
+                        <li><a href="contacto.html">Contacto</a></li>    
+                 </ul>  
+                </div> 
+            </nav>
+        </div>
+    </header>
+    <main> 
+        <section>
+            <h1 class="box aparecer">Contacto</h1>
+            <div class="box">
+            <a name="form"></a>  
+                <form action="enviado.html" method="post">
+                    <fieldset>
+                        <legend>Tu consulta</legend>
+                        <label for="nombre">Nombre</label><br> 
+                        <input type="text" name="nombre"><br>
+                        <label for="apellido">Apellido</label><br> 
+                        <input type="text" name="apellido"><br>
+                        <label for="mail">E-mail</label><br> 
+                        <input type="text" name="mail"><br><br>
+                        <label for="opcion">Sexo</label><br> 
+                        <input type="radio" name="opcion" value="masculino">Hombre
+                        <input type="radio" name="opcion" value="femenino">Mujer<br><br>
+                        <label for="motivos_de_consulta">Motivo</label><br> 
+                        <select name="seleccion_motivo">
+                            <option value="presupuesto">Presupuesto</option>
+                            <option value="producto">Productos</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="varios">Otro</option>    
+                        </select><br><br>
+                        <label for="mensaje">Mensaje</label><br> 
+                        <textarea name="mensaje"></textarea><br>
+                        <input type="reset" name="boton_restablecer" value="BORRAR">
+                        <input type="submit" name="boton_enviar" value="ENVIAR">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main> 
+    <footer>
+        <h3 class="box">Menu - Contacto - Redes sociales - Ayuda</h3>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+/*header*/
+
+.navbar-light .navbar-nav .nav-link {
+    color: #314141;
+}
+
+.navbar-light .navbar-toggler {
+    color:  #314141;
+    background-color: #FFCAE9;
+}
+
+/*main*/ 
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+
+.centro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+.centrar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+aside {
+    margin: 0px 15px;
+}
+
+aside ul {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+aside ul li {
+    padding-bottom: 10px;
+
+}
+
+aside ul li a:hover {
+    color:pink; 
+}
+
+
+h1 {
+    font-family: 'Signika', Arial, sans-serif;
+    color: #424242;
+    font-size: 2rem;
+}
+
+/*footer*/
+
+
+.texto_centrado_vertical {
+    padding: 50px 20px;
+}
+
