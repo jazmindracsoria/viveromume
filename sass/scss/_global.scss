@@ -210,7 +210,20 @@ section ul {
     }
 }
 
-/*aniamciones*/
+/*formulario*/
+
+form {
+    font-family: $secondary-font;
+    font-size: $third-type-size;
+    color: $font-color-text;
+
+    legend{
+        font-family: $primary-font;
+        font-size: $second-type-size;
+    }
+}
+
+/*animaciones*/
 
 .uno {
     animation-name: anima2;
