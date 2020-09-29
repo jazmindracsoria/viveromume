@@ -56,6 +56,16 @@ p {
 
 /*header*/
 
+.navbar-light .navbar-nav .nav-link {
+    color: $font-color-text;
+}
+
+.navbar-light .navbar-toggler {
+    color: $font-color-text;
+    background-color: $pink-mume;
+}
+
+
 header {
     height: 120px;
 }
@@ -230,6 +240,14 @@ section ul {
         color: white;
         background-color: $blue-mume;
     }
+}
+
+/*icon*/
+
+.centro {
+    display: block;
+    margin: 20px auto;
+    width: 50%
 }
 
 /*formulario*/
