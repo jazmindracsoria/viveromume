@@ -3,7 +3,14 @@
      padding: 0;
      font-size: 16px;
      background-color: $grey-bg;
- }
+}
+
+h1 {
+    font-family: $primary-font;
+    color: $font-color-title;
+    font-size: $type-size;
+}
+
 
 h2 {
     font-family: $primary-font;

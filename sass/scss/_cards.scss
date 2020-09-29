@@ -21,7 +21,32 @@
 }
 
 
-/*card*/
+/*card consejos*/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border: none;
+
+    &:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    }
+}
+
+.advice___card__title {
+    margin-bottom: 10px;
+    font-family: $primary-font;
+    font-size: $second-type-size;
+    color: $bluelight-mume;
+}
+
+.advice___card__paragraph {
+    margin-bottom: 10px;
+    font-family: $secondary-font;
+    font-size: $fourth-type-size;
+    line-height: 1.6rem;
+    color: $font-color-text;
+}
 
 
 /*card tienda*/

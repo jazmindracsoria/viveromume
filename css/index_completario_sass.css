@@ -12,6 +12,7 @@
 
 /*main*/ 
 
+
 .overflow-hidden {
     overflow: hidden;
 }
@@ -47,9 +48,4 @@ aside ul li a:hover {
     color:pink; 
 }
 
-h1 {
-    font-family: 'Signika', Arial, sans-serif;
-    color: #424242;
-    font-size: 2rem;
-}
 
