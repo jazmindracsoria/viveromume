@@ -19,27 +19,16 @@
 <body>
     <header>
         <div class="row">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light index__header">
-                <div class="col-md-4 col-sm-8">
-                    <a class="navbar-brand" href="index.html"><img src="img/logotipo.png" alt="logotipo"/></a>
-                </div>
-                <div class="col-md-8 col-sm-4">
-                    <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light index__header justify-content-around">                 
+                <a class="navbar-brand d-inline" href="index.html"><img src="img/logotipo.png" alt="logotipo vivero mume"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>          
-                    <div class="collapse navbar-collapse  float-right" id="navbarNavDropdown">
+                </button>
+                <div class="col-md-8 col-sm-4">         
+                    <div class="navbar-collapse collapse float-right" id="navbarNavDropdown">
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="tienda.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Tienda
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="tienda.html">Flores</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Hortalizas</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Más</a>
-                                </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tienda.html">Tienda<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="promociones.html">Promociones<span class="sr-only">(current)</span></a>
@@ -56,7 +45,7 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </nav> 
         </div>
     </header>
     <main class="margin__main">
@@ -143,14 +132,12 @@
     <footer>
         <div class="container">
 			<div class="row text-center text-xs-center text-sm-left text-md-left">
-                <div class="col-md-4 container">
+                <div class="container col-md-4 d-md-block d-sm-none d-none">
                     <div><h3>Menu</h3></div>
 					<ul class="list-unstyled footer__link">
-                        <ul >
-                            <li><a href="tienda.html"><i class="fas fa-angle-right"></i>Flores</a></li>
-                            <li><a href="tienda.html"><i class="fas fa-angle-right"></i>Árboles</a></li>
-                            <li><a href="tienda.html"><i class="fas fa-angle-right"></i>Materiales</a></li>
-                        </ul>
+                        <li><a href="tienda.html"><i class="fas fa-angle-right"></i>Flores</a></li>
+                        <li><a href="tienda.html"><i class="fas fa-angle-right"></i>Árboles</a></li>
+                        <li><a href="tienda.html"><i class="fas fa-angle-right"></i>Materiales</a></li>
 				    </ul>
                 </div>
                 <div class="col-md-4">
@@ -163,7 +150,7 @@
                         <li>Tel: (011) XXXX-XXXX</li>
 				    </ul>
                 </div>
-                <div class="col-md-4 d-md-block footer__link">
+                <div class="col-md-4 d-md-block d-sm-none d-none footer__link">
 					<div><h3>Redes Sociales</h3></div>
 					<ul class="list-unstyled">
                         <li class="facebook">
@@ -187,8 +174,31 @@
                             </span>
                             Twitter
                         </li>
-				    </ul>
-				</div>
+                    </ul>
+                </div>
+                <div class="col-md-4 d-md-none d-sm-block footer__link">
+					<div><h3>Seguinos</h3></div>
+					<ul class="list-unstyled d-flex justify-content-center">
+                        <li class="facebook">
+                            <span class="fa-stack fa-2x" style="font-size: 20px;">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </li>
+                        <li class="instagram">
+                            <span class="fa-stack fa-2x" style="font-size: 20px;">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </li>
+                        <li class="twitter">
+                            <span class="fa-stack fa-2x" style="font-size: 20px;">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
 			</div>
 		</div>
     </footer>

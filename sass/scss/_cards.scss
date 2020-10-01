@@ -157,3 +157,21 @@
     }
 }
 
+/*card promo*/
+.card__sale {
+    margin-bottom: 20px;
+}
+
+.card__sale__title {
+    font-family: $primary-font;
+    font-size: $second-type-size;;
+    color: $bluelight-mume;
+}
+
+.card__sale__paragraph {
+    margin-bottom: 10px;
+    font-family: $secondary-font;
+    font-size: $fourth-type-size;
+    line-height: 1.6rem;
+    color: $font-color-text;
+}

@@ -1,130 +1,3 @@
-*{
-    margin: 0;
-}
- 
-h1 {
-    font-family: 'Signika', Arial, sans-serif;
-    color: #424242;
-    font-size: 2rem;
-}
-
-h2 {
-    font-family: 'Signika', Arial, sans-serif;
-    color: #424242;
-    font-size: 2rem;
-}
-
-h3 {
-    display: inline-block;
-}
-
-a {
-    color: #314141;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-    color: #314141;
-}
-
-p {
-    font-family: 'Open_sans', Arial, sans-serif;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    color: #314141;
-    display: inline-block;
-}
-
-/*header*/
-
-.header {
-    background: #14CBA8;
-    font-family: 'Signika', Arial, sans-serif;
-    padding: 18px 30px;
-    height: 100px;
-    box-sizing: border-box;
-}
-
-.navlogo {
-    width: 70px;
-}
-
-nav h1 {
-    text-align: center;
-    font-size: 2.2rem;
-    display: inline-block;
-    width: 250px;
-    height: 100px;
-    vertical-align: middle;
-}
-
-
-nav ul {
-    list-style: none;
-    font-family: 'Signika', Arial, sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    font-size: 1.1rem;
-}
-
-nav ul li {
-    border: solid 2px white;
-    background-color: #A0ECD0;
-    padding: 1px 5px;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
-
-nav ul li:hover {
-    background-color:#FFCAE9;
-}
-
-.menunav {
-    float: right;
-    clear: right;
-    transform: translateY(30px);
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #314141;
-}
-
-.navbar-light .navbar-toggler {
-    color:  #314141;
-    background-color: #FFCAE9;
-}
-
-/*main*/ 
-
-
-.space {
-    padding-bottom: 20px;
-}
-
-
-.border {
-    border-top:solid 3px #E8E8E7;
-    border-bottom: solid 3px #E8E8E7;
-    box-sizing: border-box;
-}
-
-.caja {
-    border: solid 3px black;
-    overflow: hidden;
-}
-
-.overflow-hidden {
-    overflow: hidden;
-}
-
-
-.box {
-    padding: 20px 30px;
-    margin: 10px 20px;
-}
 
 .destacado {
     font-family: 'Signika', Arial, sans-serif;
@@ -142,16 +15,7 @@ nav ul li:hover {
     padding: 10px;
 }
 
-.titulo {
-    font-family: 'Signika', Arial, sans-serif;
-    color: #424242;
-    font-size: 2rem;
-    padding: 10px;
-}
 
-.fondo {
-    max-width: 100%;
-}
 
 .centro {
     display: block;
@@ -160,30 +24,6 @@ nav ul li:hover {
     width: 50%
 }
 
-
-.derecha {
-    float: right;
-    overflow: hidden;
-    width: 500px;
-    height: 350px;
-    margin: 20px;
-}
-
-/*flex*/
-
-.flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.flex2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    justify-content: space-between;
-    height: 800px;
-}
 
 /*grillas*/
 
@@ -260,26 +100,6 @@ nav ul li:hover {
 
 
 
-/*tabla*/
-
-table {
-    margin: 20px 300px;
-    font-family: 'Open_sans', Arial, sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    color: #314141;
-}
-
-thead {
-    background: #FFCAE9;
-}
-
-tbody td {
-    color:  #314141; 
-    font-size: 1.3rem;
-    padding: 10px;
-}
-
 .tres h2 {
     animation-name: anima1;
     animation-iteration-count: one;
@@ -337,64 +157,3 @@ tbody td {
         opacity: 100%;
         }
     }
-
-/* footer*/ 
-
-footer {
-    background: linear-gradient(to right, #FFCAE9, #A0ECD0);
-    font-family: 'Open_sans', Arial, sans-serif;
-    font-size: 1.2rem;
-    color: #314141;
-    text-align: left;
-    padding: 20px 50px;
-}
-
-footer h4 {
-    font-size: 1.2rem;
-}
-
-footer ul {
-    list-style: none;
-    text-align: left;
-    font-size: 1.1rem;
-}
-
-@media only screen and (max-width: 500px) {
-
-    nav img {
-        height: 50px;
-    }
-
-    p {
-        font-size: 1.1rem;
-        line-height: 1.5rem;
-        text-align: center;
-    }
-
-    .destacado {
-        font-size: 1.2rem;
-    }
-
-    .titulo {
-        font-size: 1.3rem;
-        padding: 10px;
-    }
-    
-    .box {
-        padding: 10px 20px;
-        margin: 5px 10px;
-    }
-
-    .card_1 img {
-        width: 120px;
-    }
-
-    footer h4 {
-        font-size: 1rem;
-        text-align: center;
-    }
-    footer ul {
-        text-align: center;
-        font-size: 0.8rem;
-    }
-  }
