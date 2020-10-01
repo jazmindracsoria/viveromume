@@ -9,6 +9,11 @@ h1 {
     font-family: $primary-font;
     color: $font-color-title;
     font-size: $type-size;
+
+    @media screen and (max-width: $small) {
+
+        font-size: $first-type-size;
+    }
 }
 
 
@@ -16,6 +21,11 @@ h2 {
     font-family: $primary-font;
     color: $font-color-title;
     font-size: $first-type-size;
+
+    @media screen and (max-width: $small) {
+
+        font-size: $third-type-size;
+    }
 }
 
 h3 {
@@ -87,6 +97,7 @@ header {
         width: 250px;
         height: 100px;
         vertical-align: middle;
+
     }
 
      ul {
@@ -135,6 +146,18 @@ section ul {
         }
 }
 
+.menu__eleccion {
+    color: $font-color-text;
+
+    a {
+        color: $font-color-text;
+    }
+    
+    & a:hover {
+        color: $bluelight-mume;
+        border-bottom: solid 2px $bluelight-mume;
+    }
+}
 
 /*titulos*/
 
@@ -213,20 +236,7 @@ section ul {
 }
 
 
-/*menus*/
 
-.menu__eleccion {
-    color: $font-color-text;
-
-    a {
-        color: $font-color-text;
-    }
-    
-    & a:hover {
-        color: $bluelight-mume;
-        border-bottom: solid 2px $bluelight-mume;
-    }
-}
 
  /*botones*/
 
@@ -244,10 +254,15 @@ section ul {
 
 /*icon*/
 
-.centro {
+.icon__guide {
     display: block;
     margin: 20px auto;
-    width: 50%
+    width: 50%;
+
+    @media screen and (max-width: $small) {
+        margin: 10px auto;
+        width: 20%;
+    }   
 }
 
 /*formulario*/

@@ -11,13 +11,17 @@
     }
     @media screen and (max-width: $small) {
         img {
-            width: 120px;
+            width: 100px;
         }
       }
 }
 
 .categorycard__background__pad {
     padding: 5px 10px;
+
+    @media screen and (max-width: $small) {
+        padding: 2px 8px;
+      }
 }
 
 
@@ -95,6 +99,12 @@
         transform: translateY(-15px);
         transition: 0.5s;
     }
+
+    @media screen and (max-width: $small) {
+        width: 80%;
+        margin: 0 auto; 
+        margin-bottom: 8px;
+    }
 }
 
 .card__news__content {
@@ -114,11 +124,22 @@
     padding: 10px 0;
 }
 
+.card__img__news {
+
+    @media screen and (max-width: $small) {
+        height: 200px;
+    }
+}
+
 .card__news__copy {
     font-family: $secondary-font;
     font-size: $fourth-type-size;
     line-height: $third-type-size;
     color: $font-color-title;
+
+    @media screen and (max-width: $small) {
+        font-size: $fifth-type-size;
+    }
 }
 
 .card__news__btn {
