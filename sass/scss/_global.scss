@@ -61,7 +61,7 @@ p {
 
     @media screen and (max-width: $small) {
         margin: 10px 0;
-      }
+    }
 }
 
 /*header*/
@@ -78,6 +78,10 @@ p {
 
 header {
     height: 120px;
+
+    @media screen and (max-width: $small) {
+        height: 80px;
+    }
 }
 
 .index__header {
@@ -86,6 +90,11 @@ header {
     padding: 18px 30px;
     height: 120px;
     box-sizing: border-box;
+
+    @media screen and (max-width: $small) {
+        padding: 9px 15px;
+        height: 80px
+    }
 }
 
  nav {
@@ -123,9 +132,10 @@ header {
     @media screen and (max-width: $small) {
 
         img {
-            height: 50px;
+            height: 45px;
         }
-      }
+
+    }
 
  }
 
