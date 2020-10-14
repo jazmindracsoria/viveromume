@@ -9,9 +9,7 @@ h1 {
     font-family: $primary-font;
     color: $font-color-title;
     font-size: $type-size;
-
     @media screen and (max-width: $small) {
-
         font-size: $first-type-size;
     }
 }
@@ -21,9 +19,7 @@ h2 {
     font-family: $primary-font;
     color: $font-color-title;
     font-size: $first-type-size;
-
     @media screen and (max-width: $small) {
-
         font-size: $third-type-size;
     }
 }
@@ -53,18 +49,23 @@ p {
         font-size: $fifth-type-size;
         line-height: $second-type-size;
         text-align: center;
-      }
+    }
 }
 
 .margin__main {
     margin: 50px 0;
-
     @media screen and (max-width: $small) {
         margin: 10px 0;
     }
 }
 
 /*header*/
+.navbar {
+
+    @media screen and (max-width: $small) {
+        display: block;
+    }
+}
 
 .navbar-light .navbar-nav .nav-link {
     color: $font-color-text;
@@ -85,19 +86,27 @@ header {
 }
 
 .index__header {
-    background: $bg-color;
+    background: $grey-bg;
     font-family: $primary-font;
     padding: 18px 30px;
     height: 120px;
+    width: auto;
     box-sizing: border-box;
+    box-shadow: 0 4px 28px #6C6A6A;
 
     @media screen and (max-width: $small) {
         padding: 9px 15px;
-        height: 80px
+        height: 80px;
+        box-shadow: 0 4px 16px #6C6A6A;   
     }
 }
 
- nav {
+nav {
+    
+    img {
+        height: 90px;              
+        
+    }
 
     h1 {
         text-align: center;
@@ -130,14 +139,15 @@ header {
     }
 
     @media screen and (max-width: $small) {
-
         img {
             height: 45px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto 
         }
-
     }
+}
 
- }
 
 
 /*menus*/
@@ -233,7 +243,6 @@ section ul {
         padding: 10px 20px;
         margin: 5px 10px;
       }
-
 }
 
 
@@ -331,7 +340,7 @@ footer {
     @media screen and (max-width: $small) {
         font-size: $sixth-type-size;
         text-align: center;
-      }
+    }
 
     ul {
         list-style: none;
@@ -343,7 +352,7 @@ footer {
 
         @media screen and (max-width: $small) {
             font-size: 0.8rem;
-          }
+        }
 
         li {
             list-style: none;
