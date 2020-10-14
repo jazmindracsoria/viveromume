@@ -60,12 +60,6 @@ p {
 }
 
 /*header*/
-.navbar {
-
-    @media screen and (max-width: $small) {
-        display: block;
-    }
-}
 
 .navbar-light .navbar-nav .nav-link {
     color: $font-color-text;
@@ -75,7 +69,6 @@ p {
     color: $font-color-text;
     background-color: $pink-mume;
 }
-
 
 header {
     height: 120px;
@@ -138,12 +131,12 @@ nav {
             }
     }
 
+
     @media screen and (max-width: $small) {
         img {
             height: 45px;
-            display: block;
             margin-left: auto;
-            margin-right: auto 
+            margin-right: auto; 
         }
     }
 }
