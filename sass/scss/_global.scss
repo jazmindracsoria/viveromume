@@ -71,10 +71,11 @@ p {
 }
 
 header {
-    height: 120px;
-
+    height: 100px;
+    width: auto;
+    
     @media screen and (max-width: $small) {
-        height: 80px;
+        height: 65px; 
     }
 }
 
@@ -82,14 +83,18 @@ header {
     background: $grey-bg;
     font-family: $primary-font;
     padding: 18px 30px;
-    height: 120px;
+    height: 100px;
     width: auto;
     box-sizing: border-box;
     box-shadow: 0 4px 28px #6C6A6A;
 
+    @media only screen and (max-width: $medium){
+        padding: 12px 15px;
+    }
+
     @media screen and (max-width: $small) {
-        padding: 9px 15px;
-        height: 80px;
+        padding: 9px 10px;
+        height: 65px;
         box-shadow: 0 4px 16px #6C6A6A;   
     }
 }
@@ -97,8 +102,7 @@ header {
 nav {
     
     img {
-        height: 90px;              
-        
+        height: 90px;                  
     }
 
     h1 {
@@ -131,6 +135,13 @@ nav {
             }
     }
 
+    @media only screen and (max-width: $medium) {
+        img {
+            height: 70px;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+    }
 
     @media screen and (max-width: $small) {
         img {
