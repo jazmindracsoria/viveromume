@@ -1,7 +1,6 @@
 
 /*main*/ 
 
-
 .centrar {
     display: block;
     margin-left: auto;
@@ -26,3 +25,35 @@ aside ul li a:hover {
     color:pink; 
 }
 
+.title__carousel{
+    color: white;
+}
+
+.fente {
+    color: white;
+    text-shadow: 0 6px 15px #191919;
+    font-size: 3.5rem;
+    position:absolute; 
+    top: 300px;
+    right: 0;
+    left: 0;
+    z-index: 3;
+}
+
+@media screen and (max-width: 900px) {
+    .fente {
+        font-size: 3rem;
+        top: 200px;
+        right: 0;
+        left: 0;
+        z-index: 3; } 
+}
+
+@media screen and (max-width: 500px) {
+    .fente {
+        font-size: 2rem;
+        top: 80px;
+        right: 0;
+        left: 0;
+        z-index: 3; } 
+}

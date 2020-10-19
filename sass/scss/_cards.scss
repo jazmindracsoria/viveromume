@@ -136,26 +136,14 @@
     font-size: $fourth-type-size;
     line-height: $third-type-size;
     color: $font-color-title;
+    padding: 10px;
 
     @media screen and (max-width: $small) {
         font-size: $fifth-type-size;
+        padding: 5px;
     }
 }
 
-.card__news__btn {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: $sixth-type-size;
-    font-family: $primary-font;
-    text-transform: uppercase;
-    color: $font-color-title;
-    background-color: $pink-mume;
-    border: none;
-  
-    &:hover {
-      background-color: $greenlight-mume;
-    }
-}
 
 /*card promo*/
 .card__sale {

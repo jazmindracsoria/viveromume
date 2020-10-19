@@ -9,6 +9,7 @@ h1 {
     font-family: $primary-font;
     color: $font-color-title;
     font-size: $type-size;
+    text-align: center;
     @media screen and (max-width: $small) {
         font-size: $first-type-size;
     }
@@ -25,6 +26,7 @@ h2 {
 }
 
 h3 {
+    font-family: $primary-font;
     display: inline-block;
 }
 
@@ -86,7 +88,7 @@ header {
     height: 100px;
     width: auto;
     box-sizing: border-box;
-    box-shadow: 0 4px 28px #6C6A6A;
+    box-shadow: 0 2px 10px #6C6A6A;
 
     @media only screen and (max-width: $medium){
         padding: 12px 15px;
@@ -95,7 +97,7 @@ header {
     @media screen and (max-width: $small) {
         padding: 9px 10px;
         height: 65px;
-        box-shadow: 0 4px 16px #6C6A6A;   
+        box-shadow: 0 1px 5px #6C6A6A;   
     }
 }
 
@@ -376,7 +378,7 @@ footer {
         text-align: center;
         padding-bottom: 10px;
         font-weight:bold;
-        font-size: 1.1rem;
+        font-size: $third-type-size;
     }
 }
 
@@ -393,14 +395,14 @@ footer {
 .instagram {
 
     &:hover {
-        @extend .facebook ;
+        @extend .facebook;
     }
 }
 
 .twitter {
     
     &:hover {
-        @extend .facebook ;
+        @extend .facebook;
     }   
 }
 
