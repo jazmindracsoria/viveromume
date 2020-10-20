@@ -42,14 +42,14 @@ a {
 p {
     font-family: $secondary-font;
     display: inline-block;
-    font-size: $second-type-size;
-    line-height: $first-type-size;
+    font-size: $third-type-size;
+    line-height: $second-type-size;
     color:$font-color-text;
     display: inline-block;
 
     @media screen and (max-width: $small) {
         font-size: $fifth-type-size;
-        line-height: $second-type-size;
+        line-height: $fourth-type-size;
         text-align: center;
     }
 }
@@ -153,7 +153,6 @@ nav {
 }
 
 
-
 /*menus*/
 
 section ul {
@@ -184,6 +183,28 @@ section ul {
 }
 
 /*titulos*/
+
+.front {
+    color: white;
+    text-shadow: 0 6px 15px #191919;
+    font-size: 3.5rem;
+    position:absolute; 
+    top: 300px;
+    right: 0;
+    left: 0;
+    z-index: 3;
+
+    @media screen and (max-width: $medium) {
+        font-size: 3rem;
+        top: 200px;
+    }
+
+    @media screen and (max-width: $small) {
+        font-size: $first-type-size;
+        top: 80px;
+    } 
+}
+
 
 .main__titulo {
     font-family: $primary-font;
@@ -232,7 +253,6 @@ section ul {
 
     @media screen and (max-width: $small) {
         font-size: $fifth-type-size;
-        text-align: center;
     }
 }
 
@@ -279,6 +299,7 @@ section ul {
     color: $blue-mume;
     border-color: $blue-mume;
     background-color:#E6EFF5;
+    margin-top: 10px;
 
     &:hover {
         color: white;
@@ -371,7 +392,7 @@ footer {
         margin:0;
 
         @media screen and (max-width: $small) {
-            font-size: 0.8rem;
+            font-size: $sixth-type-size;
         }
 
         li {
@@ -379,15 +400,20 @@ footer {
             padding:0;
             margin:0;
             padding-bottom: 10px;
+
+            @media screen and (max-width: $small) {
+                text-align: center;
+            }
+                
         }
     }
 
     a {
         color: #314141;
-    }
-    
-    & a:hover {
-        color: #518DB8;
+
+        &:hover {
+            color: #518DB8;
+        }
     }
 
     h3 {
@@ -398,11 +424,18 @@ footer {
     }
 }
 
+.footer__link {
+    &:hover{
+        transform: translateY(-5px);
+        transition: 0.5s;           
+    }
+}
+
 /*iconos redes sociales*/
 
 .facebook {
     &:hover {
-        transform: translateX(5px);
+        transform: translateY(-5px);
         transition: 0.5s;
         opacity: 0.7;
     }
@@ -422,14 +455,6 @@ footer {
     }   
 }
 
-.footer__link {
-    color: #314141;
-
-    ul li:hover {
-        transform: translateY(-5px);
-        transition: 0.5s;
-    }
-}
 
 $redes-sociales: (
 	facebook: #3B5998,

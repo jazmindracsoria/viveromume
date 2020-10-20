@@ -3,6 +3,7 @@
 
 .categorycard__background__color {
     background-color:#E8E8E7;
+    
 
     &:hover {
         transform: scale(1.1,1.1);
@@ -11,9 +12,7 @@
     }
 
     @media screen and (max-width: $small) {
-        img {
-            width: 100px;
-        }
+        margin-bottom: 25px;
 
         &:hover {
             transform: translateY(-15px);
@@ -23,11 +22,21 @@
 }
 
 .categorycard__background__pad {
+    margin: 0 5px;
     padding: 5px 10px;
 
     @media screen and (max-width: $small) {
         padding: 2px 8px;
       }
+}
+
+.card__img__category {
+    width: 200px;
+
+    @media screen and (max-width: $small) {
+        width: auto;
+        height: 100px;
+    }
 }
 
 /*card nosotros*/
@@ -169,11 +178,11 @@
     line-height: $third-type-size;
     text-align: center;
     color: $font-color-title;
-    padding: 10px;
+    padding: 0 10px;
 
     @media screen and (max-width: $small) {
         font-size: $fifth-type-size;
-        padding: 5px;
+        padding: 0 5px;
     }
 }
 
