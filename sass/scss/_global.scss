@@ -20,8 +20,14 @@ h2 {
     font-family: $primary-font;
     color: $font-color-title;
     font-size: $first-type-size;
+
+    @media screen and (max-width: $medium) {
+        padding: 1px 15px;
+    }
+
     @media screen and (max-width: $small) {
         font-size: $third-type-size;
+        text-align: center;
     }
 }
 
@@ -47,10 +53,15 @@ p {
     color:$font-color-text;
     display: inline-block;
 
+    @media screen and (max-width: $medium) {
+        padding: 1px 15px;
+    }
+
     @media screen and (max-width: $small) {
         font-size: $fifth-type-size;
-        line-height: $fourth-type-size;
+        line-height: $third-type-size;
         text-align: center;
+        padding: 1px 10px;
     }
 }
 
@@ -353,27 +364,27 @@ form {
     background-size: cover;
 }
 
-/*animaciones*/
+/*imagen*/
 
-.uno {
-    animation-name: anima2;
-    animation-iteration-count: one;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
-}
+.aboutus__image {
+    height: auto;
+    width: 600px;
 
-@keyframes anima2 {
-    from {
-        margin-top: 15%;
-        opacity: 0;
-        }
-        
-    to {
-        margin-top: 0%;
-         opacity: 100%;
-        }
+    @media screen and (max-width: $medium) {
+        height: 600px;
+        width: 100vh;
     }
 
+    @media screen and (max-width: $small) {
+        height: auto;
+        width: 350px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+}
 
 /*footer*/
 footer {
