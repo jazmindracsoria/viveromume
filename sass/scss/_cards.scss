@@ -88,11 +88,8 @@
     color: $font-color-text;
 
     @media screen and (max-width: $medium) {
-        font-size: $third-type-size;
-    }
-
-    @media screen and (max-width: $small) {
-        font-size: $fifth-type-size;
+        font-size: $sixth-type-size;
+        line-height: $second-type-size;
     }
 }
 
