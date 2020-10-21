@@ -365,6 +365,21 @@ form {
     background-size: cover;
 }
 
+.sucess__icon {
+    width: auto;
+    height: 450px;
+
+    @media screen and (max-width: $medium) {
+        height: auto;
+        width: auto;
+    }
+
+    @media screen and (max-width: $small) {
+        height: 80%;
+        width: 80%;
+    }
+}
+
 /*imagen*/
 
 .aboutus__image {
