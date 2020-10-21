@@ -15,31 +15,36 @@
     <link rel="stylesheet" type="text/css" href="sass/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Signika:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/mumeisotipo.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="row">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light index__header justify-content-around">                 
-                <a class="navbar-brand d-inline" href="index.html"><img src="img/logotipo.png" alt="logotipo vivero mume"/></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="col-md-8 col-sm-4">         
-                    <div class="navbar-collapse collapse float-right" id="navbarNavDropdown">
+            <nav class="navbar fixed-top navbar-expand-md navbar-light index__header">
+                <div class="col-6">
+                    <a class="navbar-brand" href="index.html"><img src="img/mume.png" alt="logotipo de mume vivero"/></a>
+                </div>                 
+                <div class="d-flex justify-content-end"> 
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> 
+                </div>
+                <div class="col-md-6">      
+                    <div class="navbar-collapse collapse float-md-right" id="navbarNavDropdown">
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
+                            <li>
                                 <a class="nav-link" href="tienda.html">Tienda<span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="promociones.html">Promociones<span class="sr-only">(current)</span></a>
+                            <li>
+                                <a class="nav-link" href="promociones.html">Promociones</a>
                             </li>
-                            <li class="nav-item">
+                            <li>
                                 <a class="nav-link" href="nosotros.html">Nosotros</a>
                             </li>
-                            <li class="nav-item">
+                            <li>
                                 <a class="nav-link none-sm" href="consejos.html">Consejos</a>
                             </li>
-                            <li class="nav-item">
+                            <li>
                                 <a class="nav-link" href="contacto.html">Contacto</a>
                             </li>
                         </ul>
@@ -48,25 +53,24 @@
             </nav>
         </div>
     </header>
-    <main> 
-        <section>
-            <h1>Consulta enviada</h1>
-            <h2 class="box">Tu consulta ha sido enviada, nos comunicaremos contigo en breve.</h2>
-        </section>
+    <main style="background: url(img/arbolflores.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;" class="page-holder bg-cover fondo"> 
+        <h1>Consulta enviada</h1>
+        <h2 class="box">Tu consulta ha sido enviada, nos comunicaremos contigo en breve.</h2>
     </main>
     <footer>
         <div class="container">
 			<div class="row text-center text-xs-center text-sm-left text-md-left">
                 <div class="container col-md-4 d-md-block d-sm-none d-none">
-                    <div><h3>Menu</h3></div>
-					<ul class="list-unstyled footer__link">
-                        <li><a href="tienda.html"><i class="fas fa-angle-right"></i>Flores</a></li>
-                        <li><a href="tienda.html"><i class="fas fa-angle-right"></i>Árboles</a></li>
-                        <li><a href="tienda.html"><i class="fas fa-angle-right"></i>Materiales</a></li>
+                    <h3 class="d-block text-left">Categorías</h3>
+					<ul class="list-unstyled">
+                        <li class="footer__link"><a href="tienda.html"><i class="fas fa-angle-right"></i>Flores</a></li>
+                        <li class="footer__link"><a href="tienda.html"><i class="fas fa-angle-right"></i>Hortalizas</a></li>
+                        <li class="footer__link"><a href="tienda.html"><i class="fas fa-angle-right"></i>Suculentas</a></li>
+                        <li class="footer__link"><a href="tienda.html"><i class="fas fa-angle-right"></i>Materiales</a></li>
 				    </ul>
                 </div>
                 <div class="col-md-4">
-					<div><h3>Horarios</h3></div>
+					<h3 class="d-block text-md-left">Horarios</h3>
 					<ul class="list-unstyled">
                         <li>Lunes a Sábados
                             08:00 a 12:00 hs. / 14:00 a 18:00 hs.</li>
@@ -75,8 +79,8 @@
                         <li>Tel: (011) XXXX-XXXX</li>
 				    </ul>
                 </div>
-                <div class="col-md-4 d-md-block d-sm-none d-none footer__link">
-					<div><h3>Redes Sociales</h3></div>
+                <div class="col-md-4 d-md-block d-sm-none d-none">
+					<h3 class="d-block text-left">Redes Sociales</h3>
 					<ul class="list-unstyled">
                         <li class="facebook">
                             <span class="fa-stack fa-2x" style="font-size: 20px;">
@@ -101,8 +105,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4 d-md-none d-sm-block footer__link">
-					<div><h3>Seguinos</h3></div>
+                <div class="col-md-4 d-md-none d-sm-block">
+					<h3 class="d-block">Seguinos</h3>
 					<ul class="list-unstyled d-flex justify-content-center">
                         <li class="facebook">
                             <span class="fa-stack fa-2x" style="font-size: 20px;">

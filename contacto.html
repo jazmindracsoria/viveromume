@@ -52,61 +52,56 @@
             </nav>
         </div>
     </header>   
-    <main>
-        <div style="background: url(img/arbolflores.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;" class="page-holder bg-cover fondo"> 
-            <section class="container contact-form contact_padding">
-                    <h1 class="text-center text__carousel">Contacto</h1>
-                    <p class="centro text-center text__carousel">Puedes acercarnos tu consulta completando el siguiente formulario, y responderemos tu mensaje en breve.
-                    </p>
-                    <a name="form"></a>  
-                    <form action="enviado.html" method="post">
-                        <fieldset>
-                            <legend class="text__carousel">Dejanos tu consulta</legend>
-                            <div class="row text__carousel">
-                                <div class="col-lg-6 col-md-12">
-                                    <div class="form-group">
-                                        <label for="nombre">Nombre</label> 
-                                        <input type="text" name="nombre" class="form-control"/>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="apellido">Apellido</label> 
-                                        <input type="text" name="apellido" class="form-control"/>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="mail">E-mail</label> 
-                                        <input type="text" name="mail" class="form-control"/>
-                                    </div>
-                                    <div class="form-check">
-                                        <label for="opcion">Sexo</label><br>  
-                                        <input class="form-check-input" type="radio" name="opcion" value="masculino">Hombre <br>
-                                        <input class="form-check-input" type="radio" name="opcion" value="femenino">Mujer<br><br>
-                                    </div>                                   
-                                </div>
-                                <div class="col-lg-6 col-md-12">
-                                    <div>
-                                        <label for="motivos_de_consulta">Motivo</label><br> 
-                                        <select class="form-control" name="seleccion_motivo">
-                                        <option value="presupuesto">Presupuesto</option>
-                                        <option value="producto">Productos</option>
-                                        <option value="consulta">Consulta</option>
-                                        <option value="varios">Otro</option>
-                                        </select>   
-                                    </div>   
-                                    <br>
-                                    <div class="form-group">
-                                        <textarea name="mensaje" class="form-control" placeholder="Escribe tu consulta *" style="width: 100%; height: 200px;"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="reset" name="boton_restablecer" class="btn card__btn__blue" value="BORRAR">
-                                        <input type="submit" name="boton_enviar" class="btn card__btn__blue" value="ENVIAR">
-                                    </div>
-                                </div>
+    <main style="background: url(img/arbolflores.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;" class="page-holder bg-cover fondo">
+        <section class="container contact-form contact_padding">
+            <h1 class="text-center text__carousel">Contacto</h1>
+            <p class="centro text-center text__carousel">Puedes acercarnos tu consulta completando el siguiente formulario, y responderemos tu mensaje en breve.
+            </p>
+            <a name="form"></a>  
+            <form action="enviado.html" method="post">
+                <fieldset>
+                    <legend class="text__carousel">Dejanos tu consulta</legend>
+                    <div class="row text__carousel">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label> 
+                                <input type="text" name="nombre" class="form-control"/>
                             </div>
-                        </fieldset>
-                    </form>
-                </div>
-            </section>
-        </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido</label> 
+                                <input type="text" name="apellido" class="form-control"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="mail">E-mail</label> 
+                                <input type="text" name="mail" class="form-control"/>
+                            </div>
+                            <div class="form-check">
+                                <label for="opcion">Sexo</label><br>  
+                                <input class="form-check-input" type="radio" name="opcion" value="masculino">Hombre <br>
+                                <input class="form-check-input" type="radio" name="opcion" value="femenino">Mujer<br><br>
+                            </div>                                   
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <label for="motivos_de_consulta">Motivo</label><br> 
+                            <select class="form-control" name="seleccion_motivo">
+                            <option value="presupuesto">Presupuesto</option>
+                            <option value="producto">Productos</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="varios">Otro</option>
+                            </select>     
+                            <br>
+                            <div class="form-group">
+                                <textarea name="mensaje" class="form-control" placeholder="Escribe tu consulta *" style="width: 100%; height: 200px;"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="reset" name="boton_restablecer" class="btn card__btn__blue" value="BORRAR">
+                                <input type="submit" name="boton_enviar" class="btn card__btn__blue" value="ENVIAR">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main> 
     <footer>
         <div class="container">
