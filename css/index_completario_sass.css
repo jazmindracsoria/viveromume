@@ -7,26 +7,3 @@
     margin-right: auto;
 }
 
-aside {
-    margin: 0px 15px;
-}
-
-aside ul {
-    list-style: none;
-    font-size: 1.2rem;
-}
-
-aside ul li {
-    padding-bottom: 10px;
-
-}
-
-aside ul li a:hover {
-    color:pink; 
-}
-
-.text__carousel {
-    color: white;
-    text-shadow: 0 4px 10px #191919;
-}
-

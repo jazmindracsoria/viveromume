@@ -54,8 +54,13 @@ p {
     }
 }
 
+i {
+    padding: 0 8px;
+}
+
 .margin__main {
     margin: 50px 0;
+    
     @media screen and (max-width: $small) {
         margin: 10px 0;
     }
@@ -169,18 +174,14 @@ section ul {
         }
 }
 
-.menu__eleccion {
-    color: $font-color-text;
 
-    a {
-        color: $font-color-text;
-    }
-    
-    & a:hover {
-        color: $bluelight-mume;
-        border-bottom: solid 2px $bluelight-mume;
-    }
+/*carrousel*/
+.text__carousel {
+    color: white;
+    text-shadow: 0 4px 10px #191919;
 }
+
+
 
 /*titulos*/
 
@@ -218,21 +219,6 @@ section ul {
     }
 }
 
-.main__titulo__animado {
-    font-family: $primary-font;
-    color: $font-color-title;
-    font-size: $first-type-size;
-    padding: 10px;
-    animation-name: anima3;
-    animation-iteration-count: one;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
-
-    @media screen and (max-width: $small) {
-        font-size: $third-type-size;
-        padding: 10px;
-    }
-}
 
 .main__subtitulo__blue {
     font-family: $primary-font;
@@ -305,6 +291,26 @@ section ul {
         color: white;
         background-color: $blue-mume;
     }
+}
+
+.card__btn__pink {
+    font-family: $secondary-font;
+    color: $darkpink-mume;
+    border-color: $darkpink-mume;
+    background-color:#FFF9FC;
+    margin-top: 10px;
+
+    &:hover {
+        color: white;
+        background-color: $darkpink-mume;
+        border-color: $darkpink-mume;
+    }
+}
+
+
+.btn-group {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /*icon*/

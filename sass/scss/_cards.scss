@@ -90,8 +90,7 @@
 /*card tienda*/
 
 
-.card2 {
-    max-width: 200px;
+.cardshop {
     text-align: center;
     border:  solid 1px #E8E8E7;
     margin-bottom: 20px;
@@ -101,16 +100,65 @@
         transform: translateY(-15px);
         transition: 0.5s;
     }
+}
 
-    h3 {
-        font-family: $primary-font;
-        font-size: $second-type-size;
-    }    
+.cardshop__title {
+    font-family: $primary-font;
+    font-size: $second-type-size;
+    line-height: $third-type-size;
+    text-align: center;
+    color: $bluelight-mume;
+    padding: 10px 0;
 
-    p {
+    @media screen and (max-width: $medium) {
         font-size: $fourth-type-size;
-        font-family: $secondary-font;
-        line-height: $third-type-size;       
+    }
+
+    @media screen and (max-width: $small) {
+        font-size: $fifth-type-size;
+        padding: 0;
+        padding-top: 10px;
+    }
+}
+
+.cardshop__price {
+    font-family: $primary-font;
+    font-size: 1.8rem;
+
+    @media screen and (max-width: $medium) {
+        font-size: $second-type-size;
+    }
+
+    @media screen and (max-width: $small) {
+        font-size: $fifth-type-size;
+        margin-bottom: 10px;
+    }
+}
+
+.cardshop__description {
+    font-size: $third-type-size;
+    padding: 0 10px;
+
+    @media screen and (max-width: $medium) {
+        font-size: $fourth-type-size;
+    }
+
+    @media screen and (max-width: $small) {
+        font-size: $sixth-type-size;
+    }
+}
+
+.cardshop__image {
+    height: auto;
+    width: 250px;
+
+    @media screen and (max-width: $medium) {
+        height: auto;
+        width: 221px;
+    }
+    @media screen and (max-width: $small) {
+        height: auto;
+        width: 160px;
     }
 }
 
